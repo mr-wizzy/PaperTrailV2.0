@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Backgrounds */
+    --bg-app: #eff3f9; /* Soft blue-gray background from the mockups */
+    --bg-card: #ffffff; /* White cards and panels */
+    --bg-sidebar: #ffffff;
+
+    /* Text Colors */
+    --text-primary: #111827; /* Dark slate for main headings and values */
+    --text-secondary: #6b7280; /* Muted gray for labels and secondary text */
+    --text-muted: #9ca3af;
+
+    /* Brand Colors */
+    --color-brand: #2563eb; /* Vibrant blue used for active states and primary buttons */
+    --color-brand-hover: #1d4ed8;
+    --color-brand-light: #eff6ff; /* Light blue for active sidebar items */
+
+    /* Borders */
+    --border-light: #e5e7eb;
+    
+    /* Chart / Progress Bar Colors */
+    --progress-track: #f3f4f6;
+    --progress-fill-emerald: #10b981;
+    --progress-fill-amber: #f59e0b;
+    --progress-fill-red: #ef4444;
+    --progress-fill-blue: #3b82f6;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+  }
+
+  /* Headings typography system */
+  h1 {
+    @apply text-2xl font-bold text-gray-900;
+  }
+  h2 {
+    @apply text-lg font-semibold text-gray-900;
+  }
+  h3 {
+    @apply text-sm font-semibold text-gray-700;
+  }
+}
+
+@layer components {
+  /* Reusable card component based on the UI templates */
+  .card-panel {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-light);
+    @apply rounded-xl shadow-sm overflow-hidden;
+  }
+
+  /* Standardized table headers based on the UI templates */
+  .table-header {
+    @apply text-xs font-semibold text-gray-500 uppercase tracking-wider pb-3 border-b border-gray-200 text-left;
+  }
+
+  /* Metric label typography */
+  .metric-label {
+    @apply text-sm font-medium text-gray-500;
+  }
+  
+  /* Metric value typography */
+  .metric-value {
+    @apply text-3xl font-bold text-gray-900 mt-2;
+  }
+}

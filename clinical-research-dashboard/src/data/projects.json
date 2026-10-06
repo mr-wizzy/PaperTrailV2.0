@@ -1,0 +1,138 @@
+[
+  {
+    "id": "CRD-1001",
+    "title": "Efficacy of Pembrolizumab in Advanced Melanoma",
+    "protocolNumber": "PRT-90210",
+    "phase": "Phase III",
+    "status": "Active",
+    "principalInvestigator": "Dr. Sarah Jenkins",
+    "therapeuticArea": "Oncology",
+    "enrollment": {
+      "current": 250,
+      "target": 300
+    },
+    "startDate": "2023-01-15",
+    "lastUpdated": "2024-03-10",
+    "description": "A multicenter, randomized, double-blind study evaluating the long-term efficacy and safety of Pembrolizumab compared to standard chemotherapy in patients with unresectable or metastatic melanoma.",
+    "primaryEndpoint": "Overall Survival (OS) at 24 months"
+  },
+  {
+    "id": "CRD-1002",
+    "title": "Novel ACE Inhibitor for Treatment-Resistant Hypertension",
+    "protocolNumber": "PRT-44512",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "principalInvestigator": "Dr. Marcus Chen",
+    "therapeuticArea": "Cardiology",
+    "enrollment": {
+      "current": 45,
+      "target": 150
+    },
+    "startDate": "2024-02-01",
+    "lastUpdated": "2024-04-15",
+    "description": "This study aims to assess the dose-response relationship and tolerability of a novel ACE inhibitor (TVA-204) in patients who have failed to achieve blood pressure control on at least three other antihypertensive medications.",
+    "primaryEndpoint": "Reduction in seated systolic blood pressure from baseline to week 12"
+  },
+  {
+    "id": "CRD-1003",
+    "title": "Gene Therapy Approach for Early-Onset Alzheimer's",
+    "protocolNumber": "PRT-77890",
+    "phase": "Phase I",
+    "status": "Suspended",
+    "principalInvestigator": "Dr. Elena Rostova",
+    "therapeuticArea": "Neurology",
+    "enrollment": {
+      "current": 12,
+      "target": 20
+    },
+    "startDate": "2023-08-20",
+    "lastUpdated": "2024-01-05",
+    "description": "A first-in-human trial testing the safety of a viral vector-based gene therapy (AAV-Neuro9) designed to enhance amyloid clearance in patients with early-onset familial Alzheimer's disease.",
+    "primaryEndpoint": "Incidence of treatment-emergent adverse events (TEAEs) over 6 months"
+  },
+  {
+    "id": "CRD-1004",
+    "title": "Biologic Therapy for Severe Rheumatoid Arthritis",
+    "protocolNumber": "PRT-33211",
+    "phase": "Phase IV",
+    "status": "Completed",
+    "principalInvestigator": "Dr. James O'Connor",
+    "therapeuticArea": "Immunology",
+    "enrollment": {
+      "current": 500,
+      "target": 500
+    },
+    "startDate": "2021-05-10",
+    "lastUpdated": "2023-11-20",
+    "description": "A post-marketing surveillance study to monitor the long-term safety profile and real-world effectiveness of subcutaneous biologic therapy in adults with severe rheumatoid arthritis.",
+    "primaryEndpoint": "Rate of serious opportunistic infections over a 2-year period"
+  },
+  {
+    "id": "CRD-1005",
+    "title": "CAR-T Cell Therapy in Relapsed B-Cell Lymphoma",
+    "protocolNumber": "PRT-99088",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "principalInvestigator": "Dr. Aisha Patel",
+    "therapeuticArea": "Oncology",
+    "enrollment": {
+      "current": 22,
+      "target": 60
+    },
+    "startDate": "2024-01-10",
+    "lastUpdated": "2024-04-18",
+    "description": "Evaluating the objective response rate of a next-generation CD19-directed CAR-T cell therapy in patients with relapsed or refractory diffuse large B-cell lymphoma (DLBCL).",
+    "primaryEndpoint": "Objective Response Rate (ORR) according to Lugano criteria"
+  },
+  {
+    "id": "CRD-1006",
+    "title": "Wearable Monitor for Atrial Fibrillation Detection",
+    "protocolNumber": "PRT-11223",
+    "phase": "Phase III",
+    "status": "Active",
+    "principalInvestigator": "Dr. William Torres",
+    "therapeuticArea": "Cardiology",
+    "enrollment": {
+      "current": 850,
+      "target": 1000
+    },
+    "startDate": "2023-06-01",
+    "lastUpdated": "2024-04-01",
+    "description": "A decentralized clinical trial comparing the diagnostic accuracy of a novel continuously recording wearable biosensor versus standard Holter monitoring for detecting silent atrial fibrillation.",
+    "primaryEndpoint": "Sensitivity and specificity of AF detection over 14 days"
+  },
+  {
+    "id": "CRD-1007",
+    "title": "Monoclonal Antibody for Multiple Sclerosis",
+    "protocolNumber": "PRT-55677",
+    "phase": "Phase III",
+    "status": "Completed",
+    "principalInvestigator": "Dr. Olivia Bennett",
+    "therapeuticArea": "Neurology",
+    "enrollment": {
+      "current": 420,
+      "target": 420
+    },
+    "startDate": "2020-09-15",
+    "lastUpdated": "2023-12-10",
+    "description": "A randomized, active-controlled trial assessing whether a novel monoclonal antibody can slow disability progression more effectively than standard interferon therapy in relapsing-remitting MS.",
+    "primaryEndpoint": "Proportion of patients with 6-month confirmed disability progression"
+  },
+  {
+    "id": "CRD-1008",
+    "title": "Oral JAK Inhibitor for Ulcerative Colitis",
+    "protocolNumber": "PRT-88900",
+    "phase": "Phase II",
+    "status": "Suspended",
+    "principalInvestigator": "Dr. Robert Kim",
+    "therapeuticArea": "Immunology",
+    "enrollment": {
+      "current": 65,
+      "target": 200
+    },
+    "startDate": "2023-11-01",
+    "lastUpdated": "2024-02-28",
+    "description": "Evaluating the efficacy and safety of a selective oral JAK-1 inhibitor in patients with moderate to severe ulcerative colitis. The study was paused pending review of a safety signal.",
+    "primaryEndpoint": "Clinical remission at week 8 defined by Mayo score"
+  }
+]
