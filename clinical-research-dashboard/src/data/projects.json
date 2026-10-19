@@ -1,138 +1,547 @@
 [
   {
-    "id": "CRD-1001",
-    "title": "Efficacy of Pembrolizumab in Advanced Melanoma",
-    "protocolNumber": "PRT-90210",
-    "phase": "Phase III",
+    "id": "COVID-2022",
+    "title": "COVID -2022 Vaccine Trial",
+    "protocolNumber": "CNT-2022-004",
+    "sponsor": "Federal Government",
+    "phase": "Phase IX",
     "status": "Active",
-    "principalInvestigator": "Dr. Sarah Jenkins",
-    "therapeuticArea": "Oncology",
+    "riskLevel": "Critical",
+    "principalInvestigator": "Dr. Amelia Chen",
+    "researchManager": "DR CHINONSO EGEMMA",
+    "therapeuticArea": "Infectious Disease",
     "enrollment": {
-      "current": 250,
+      "current": 450,
+      "target": 1500
+    },
+    "timeline": {
+      "startDate": "2026-01-24",
+      "endDate": "2026-11-30",
+      "elapsedPercent": 27,
+      "timeRemaining": "3 months remaining",
+      "daysRemaining": 88,
+      "patientsBehindTarget": 947
+    },
+    "metrics": {
+      "sitesCount": 34,
+      "activeSites": 6,
+      "sitesAtRisk": 4,
+      "sitesNeedAttention": 2,
+      "dropRate": 17,
+      "complianceScore": 3,
+      "openIssuesCount": 3
+    },
+    "monthlyTrend": [
+      { "month": "Jan", "actual": 20, "target": 40 },
+      { "month": "Feb", "actual": 45, "target": 70 },
+      { "month": "Mar", "actual": 90, "target": 110 },
+      { "month": "Apr", "actual": 135, "target": 140 },
+      { "month": "May", "actual": 160, "target": 170 },
+      { "month": "Jun", "actual": 145, "target": 185 },
+      { "month": "Jul", "actual": 170, "target": 195 },
+      { "month": "Aug", "actual": 165, "target": 205 },
+      { "month": "Sept", "actual": 160, "target": 215 },
+      { "month": "Oct", "actual": 195, "target": 225 },
+      { "month": "Nov", "actual": 210, "target": 235 },
+      { "month": "Dec", "actual": 240, "target": 250 }
+    ],
+    "sites": [
+      {
+        "id": "site-1",
+        "name": "IBADAN CENTER",
+        "status": "Ongoing",
+        "enrolled": 15,
+        "target": 75,
+        "dropOffRate": 14,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-2",
+        "name": "LAGOS CENTER",
+        "status": "Ongoing",
+        "enrolled": 30,
+        "target": 60,
+        "dropOffRate": 45,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-3",
+        "name": "ABUJA CENTER",
+        "status": "Planned",
+        "enrolled": 10,
+        "target": 50,
+        "dropOffRate": 0,
+        "compliance": "Low",
+        "riskLevel": "High"
+      },
+      {
+        "id": "site-4",
+        "name": "KANO CENTER",
+        "status": "Ongoing",
+        "enrolled": 24,
+        "target": 60,
+        "dropOffRate": 30,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-5",
+        "name": "CALABAR ZONE",
+        "status": "Completed",
+        "enrolled": 80,
+        "target": 80,
+        "dropOffRate": 100,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-6",
+        "name": "KADUNA PROJECT",
+        "status": "Pending",
+        "enrolled": 0,
+        "target": 80,
+        "dropOffRate": 0,
+        "compliance": "Low",
+        "riskLevel": "High"
+      },
+      {
+        "id": "site-7",
+        "name": "ENUGU CENTER",
+        "status": "Ongoing",
+        "enrolled": 18,
+        "target": 90,
+        "dropOffRate": 12,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "kf-1",
+        "severity": "Critical",
+        "title": "Ibadan Medical Center Enrollment & Compliance Critical",
+        "description": "Site at 20% of target enrollment (15/75 patients). Compliance score 61% below 70% threshold. CAPA must be initiated within 5 business days, 14 unresolved data queries exceed 14-day SLA",
+        "recommendation": "Initiate formal CAPA, deploy on-site CRA visit, and evaluate temporary PI staffing support or consider replacing site."
+      },
+      {
+        "id": "kf-2",
+        "severity": "High",
+        "title": "Lagos Community Health Initiative Enrollment & Compliance High",
+        "description": "Site at 50% of target enrollment (30/60 patients). Compliance score 75% just meeting the threshold. 8 unresolved data queries require follow-up within 10 days.",
+        "recommendation": "Enhance patient recruitment strategies, schedule bi-weekly follow-ups on data queries, and consider additional staff training."
+      },
+      {
+        "id": "kf-3",
+        "severity": "Medium",
+        "title": "Kano Health Services Project Enrollment & Compliance Medium",
+        "description": "Site at 40% of target enrollment (24/60 patients). Overall compliance score 85% with 4 minor protocol deviations documented during last monitoring visit.",
+        "recommendation": "Conduct targeted training for study coordinators on revised protocol amendments and optimize subject retention protocols."
+      }
+    ],
+    "regulatory": {
+      "protocolVersion": "v2.1 (Apr 2024)",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-142857",
+      "reportingPeriod": "Jan 2026 - Apr 2026",
+      "reportDate": "January 15, 2026",
+      "preparedBy": "Dr Chinonso Egemma (Research monitor)",
+      "reportingPeriodEnd": "Apr 30, 2024"
+    },
+    "startDate": "2026-01-24",
+    "lastUpdated": "2026-04-23",
+    "description": "A multicenter, randomized, double-blind trial evaluating the safety, immunogenicity, and long-term efficacy of the novel CNT-2022 recombinant spike protein vaccine candidate across diverse demographic cohorts.",
+    "primaryEndpoint": "Seroconversion rate and neutralising antibody titers at 28 days post-second dose"
+  },
+  {
+    "id": "LS-FEVER-2025",
+    "title": "Lassa Fever Therapeutic Intervention Study",
+    "protocolNumber": "LS-FEVER-2025",
+    "sponsor": "National Institute of Health",
+    "phase": "Phase II",
+    "status": "Active",
+    "riskLevel": "Medium",
+    "principalInvestigator": "Dr. Marcus Chen",
+    "researchManager": "DR JOHN INYANG",
+    "therapeuticArea": "Infectious Disease",
+    "enrollment": {
+      "current": 200,
       "target": 300
     },
-    "startDate": "2023-01-15",
-    "lastUpdated": "2024-03-10",
-    "description": "A multicenter, randomized, double-blind study evaluating the long-term efficacy and safety of Pembrolizumab compared to standard chemotherapy in patients with unresectable or metastatic melanoma.",
-    "primaryEndpoint": "Overall Survival (OS) at 24 months"
-  },
-  {
-    "id": "CRD-1002",
-    "title": "Novel ACE Inhibitor for Treatment-Resistant Hypertension",
-    "protocolNumber": "PRT-44512",
-    "phase": "Phase II",
-    "status": "Recruiting",
-    "principalInvestigator": "Dr. Marcus Chen",
-    "therapeuticArea": "Cardiology",
-    "enrollment": {
-      "current": 45,
-      "target": 150
+    "timeline": {
+      "startDate": "2025-05-10",
+      "endDate": "2026-12-15",
+      "elapsedPercent": 60,
+      "timeRemaining": "8 months remaining",
+      "daysRemaining": 240,
+      "patientsBehindTarget": 30
     },
-    "startDate": "2024-02-01",
-    "lastUpdated": "2024-04-15",
-    "description": "This study aims to assess the dose-response relationship and tolerability of a novel ACE inhibitor (TVA-204) in patients who have failed to achieve blood pressure control on at least three other antihypertensive medications.",
-    "primaryEndpoint": "Reduction in seated systolic blood pressure from baseline to week 12"
-  },
-  {
-    "id": "CRD-1003",
-    "title": "Gene Therapy Approach for Early-Onset Alzheimer's",
-    "protocolNumber": "PRT-77890",
-    "phase": "Phase I",
-    "status": "Suspended",
-    "principalInvestigator": "Dr. Elena Rostova",
-    "therapeuticArea": "Neurology",
-    "enrollment": {
-      "current": 12,
-      "target": 20
+    "metrics": {
+      "sitesCount": 23,
+      "activeSites": 18,
+      "sitesAtRisk": 1,
+      "sitesNeedAttention": 1,
+      "dropRate": 8,
+      "complianceScore": 4,
+      "openIssuesCount": 1
     },
-    "startDate": "2023-08-20",
-    "lastUpdated": "2024-01-05",
-    "description": "A first-in-human trial testing the safety of a viral vector-based gene therapy (AAV-Neuro9) designed to enhance amyloid clearance in patients with early-onset familial Alzheimer's disease.",
-    "primaryEndpoint": "Incidence of treatment-emergent adverse events (TEAEs) over 6 months"
+    "monthlyTrend": [
+      { "month": "Jan", "actual": 15, "target": 18 },
+      { "month": "Feb", "actual": 32, "target": 35 },
+      { "month": "Mar", "actual": 55, "target": 50 },
+      { "month": "Apr", "actual": 75, "target": 70 },
+      { "month": "May", "actual": 98, "target": 95 },
+      { "month": "Jun", "actual": 120, "target": 115 },
+      { "month": "Jul", "actual": 140, "target": 135 },
+      { "month": "Aug", "actual": 158, "target": 160 },
+      { "month": "Sept", "actual": 172, "target": 180 },
+      { "month": "Oct", "actual": 185, "target": 200 },
+      { "month": "Nov", "actual": 195, "target": 220 },
+      { "month": "Dec", "actual": 200, "target": 240 }
+    ],
+    "sites": [
+      {
+        "id": "site-ls-1",
+        "name": "BENIN CLINICAL CENTER",
+        "status": "Ongoing",
+        "enrolled": 120,
+        "target": 150,
+        "dropOffRate": 5,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-ls-2",
+        "name": "OWO SPECIALIST HOSPITAL",
+        "status": "Ongoing",
+        "enrolled": 80,
+        "target": 150,
+        "dropOffRate": 12,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      }
+    ],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v1.4",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-138402",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "April 02, 2026",
+      "preparedBy": "DR JOHN INYANG",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2025-05-10",
+    "lastUpdated": "2026-04-10",
+    "description": "Evaluation of monoclonal antiviral therapy cocktail in reducing viral load and mortality in acute Lassa fever patients.",
+    "primaryEndpoint": "30-day all-cause mortality reduction compared to ribavirin standard care"
   },
   {
-    "id": "CRD-1004",
-    "title": "Biologic Therapy for Severe Rheumatoid Arthritis",
-    "protocolNumber": "PRT-33211",
+    "id": "WHO-AIDS-2026",
+    "title": "WHO - AIDS - 2026 Anti-Retroviral Combination Regimen",
+    "protocolNumber": "WHO-AIDS-2026",
+    "sponsor": "World Health Organization",
     "phase": "Phase IV",
-    "status": "Completed",
-    "principalInvestigator": "Dr. James O'Connor",
+    "status": "On Hold",
+    "riskLevel": "Low",
+    "principalInvestigator": "Dr. Sarah Jenkins",
+    "researchManager": "DR JANE SILVER",
     "therapeuticArea": "Immunology",
     "enrollment": {
-      "current": 500,
-      "target": 500
-    },
-    "startDate": "2021-05-10",
-    "lastUpdated": "2023-11-20",
-    "description": "A post-marketing surveillance study to monitor the long-term safety profile and real-world effectiveness of subcutaneous biologic therapy in adults with severe rheumatoid arthritis.",
-    "primaryEndpoint": "Rate of serious opportunistic infections over a 2-year period"
-  },
-  {
-    "id": "CRD-1005",
-    "title": "CAR-T Cell Therapy in Relapsed B-Cell Lymphoma",
-    "protocolNumber": "PRT-99088",
-    "phase": "Phase II",
-    "status": "Recruiting",
-    "principalInvestigator": "Dr. Aisha Patel",
-    "therapeuticArea": "Oncology",
-    "enrollment": {
-      "current": 22,
-      "target": 60
-    },
-    "startDate": "2024-01-10",
-    "lastUpdated": "2024-04-18",
-    "description": "Evaluating the objective response rate of a next-generation CD19-directed CAR-T cell therapy in patients with relapsed or refractory diffuse large B-cell lymphoma (DLBCL).",
-    "primaryEndpoint": "Objective Response Rate (ORR) according to Lugano criteria"
-  },
-  {
-    "id": "CRD-1006",
-    "title": "Wearable Monitor for Atrial Fibrillation Detection",
-    "protocolNumber": "PRT-11223",
-    "phase": "Phase III",
-    "status": "Active",
-    "principalInvestigator": "Dr. William Torres",
-    "therapeuticArea": "Cardiology",
-    "enrollment": {
-      "current": 850,
-      "target": 1000
-    },
-    "startDate": "2023-06-01",
-    "lastUpdated": "2024-04-01",
-    "description": "A decentralized clinical trial comparing the diagnostic accuracy of a novel continuously recording wearable biosensor versus standard Holter monitoring for detecting silent atrial fibrillation.",
-    "primaryEndpoint": "Sensitivity and specificity of AF detection over 14 days"
-  },
-  {
-    "id": "CRD-1007",
-    "title": "Monoclonal Antibody for Multiple Sclerosis",
-    "protocolNumber": "PRT-55677",
-    "phase": "Phase III",
-    "status": "Completed",
-    "principalInvestigator": "Dr. Olivia Bennett",
-    "therapeuticArea": "Neurology",
-    "enrollment": {
-      "current": 420,
-      "target": 420
-    },
-    "startDate": "2020-09-15",
-    "lastUpdated": "2023-12-10",
-    "description": "A randomized, active-controlled trial assessing whether a novel monoclonal antibody can slow disability progression more effectively than standard interferon therapy in relapsing-remitting MS.",
-    "primaryEndpoint": "Proportion of patients with 6-month confirmed disability progression"
-  },
-  {
-    "id": "CRD-1008",
-    "title": "Oral JAK Inhibitor for Ulcerative Colitis",
-    "protocolNumber": "PRT-88900",
-    "phase": "Phase II",
-    "status": "Suspended",
-    "principalInvestigator": "Dr. Robert Kim",
-    "therapeuticArea": "Immunology",
-    "enrollment": {
-      "current": 65,
+      "current": 167,
       "target": 200
     },
-    "startDate": "2023-11-01",
-    "lastUpdated": "2024-02-28",
-    "description": "Evaluating the efficacy and safety of a selective oral JAK-1 inhibitor in patients with moderate to severe ulcerative colitis. The study was paused pending review of a safety signal.",
-    "primaryEndpoint": "Clinical remission at week 8 defined by Mayo score"
+    "timeline": {
+      "startDate": "2024-03-01",
+      "endDate": "2026-06-30",
+      "elapsedPercent": 85,
+      "timeRemaining": "2 months remaining",
+      "daysRemaining": 65,
+      "patientsBehindTarget": 0
+    },
+    "metrics": {
+      "sitesCount": 4,
+      "activeSites": 4,
+      "sitesAtRisk": 0,
+      "sitesNeedAttention": 0,
+      "dropRate": 4,
+      "complianceScore": 5,
+      "openIssuesCount": 0
+    },
+    "monthlyTrend": [
+      { "month": "Jan", "actual": 25, "target": 20 },
+      { "month": "Feb", "actual": 50, "target": 40 },
+      { "month": "Mar", "actual": 75, "target": 65 },
+      { "month": "Apr", "actual": 100, "target": 90 },
+      { "month": "May", "actual": 120, "target": 115 },
+      { "month": "Jun", "actual": 140, "target": 135 },
+      { "month": "Jul", "actual": 150, "target": 150 },
+      { "month": "Aug", "actual": 155, "target": 160 },
+      { "month": "Sept", "actual": 160, "target": 170 },
+      { "month": "Oct", "actual": 165, "target": 180 },
+      { "month": "Nov", "actual": 167, "target": 190 },
+      { "month": "Dec", "actual": 167, "target": 200 }
+    ],
+    "sites": [],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v3.0",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-129031",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "March 28, 2026",
+      "preparedBy": "DR JANE SILVER",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2024-03-01",
+    "lastUpdated": "2026-03-15",
+    "description": "Global Phase IV observational registry assessing tolerability and viral suppression durability for once-daily dual-combination regimen.",
+    "primaryEndpoint": "Percentage of participants maintaining undetectable viral load (<50 copies/mL) at 48 weeks"
+  },
+  {
+    "id": "MEASLES-2024",
+    "title": "Pediatric Measles Booster Safety & Immunogenicity",
+    "protocolNumber": "MEASLES-2024",
+    "sponsor": "Federal Ministry of Health",
+    "phase": "Phase III",
+    "status": "Active",
+    "riskLevel": "Medium",
+    "principalInvestigator": "Dr. Elena Rostova",
+    "researchManager": "DR A. JAMES",
+    "therapeuticArea": "Infectious Disease",
+    "enrollment": {
+      "current": 20,
+      "target": 100
+    },
+    "timeline": {
+      "startDate": "2026-02-01",
+      "endDate": "2027-01-31",
+      "elapsedPercent": 18,
+      "timeRemaining": "9 months remaining",
+      "daysRemaining": 275,
+      "patientsBehindTarget": 15
+    },
+    "metrics": {
+      "sitesCount": 9,
+      "activeSites": 5,
+      "sitesAtRisk": 2,
+      "sitesNeedAttention": 1,
+      "dropRate": 10,
+      "complianceScore": 3.8,
+      "openIssuesCount": 1
+    },
+    "monthlyTrend": [],
+    "sites": [],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v1.0",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-150211",
+      "reportingPeriod": "Feb 2026 - Apr 2026",
+      "reportDate": "April 12, 2026",
+      "preparedBy": "DR A. JAMES",
+      "reportingPeriodEnd": "Apr 30, 2026"
+    },
+    "startDate": "2026-02-01",
+    "lastUpdated": "2026-04-12",
+    "description": "Comparative safety and immunogenicity trial evaluating a single high-titer aerosolized measles booster in school-age cohorts.",
+    "primaryEndpoint": "Geometric Mean Titers (GMT) of measles neutralizing antibodies 30 days post-booster"
+  },
+  {
+    "id": "CHICKENPOX-2024",
+    "title": "Varicella Zoster Vaccine Efficacy in High-Risk Cohorts",
+    "protocolNumber": "CHICKENPOX-2024",
+    "sponsor": "Global Vaccines Initiative",
+    "phase": "Phase II",
+    "status": "Active",
+    "riskLevel": "High",
+    "principalInvestigator": "Dr. Robert Vance",
+    "researchManager": "DR B. SMITH",
+    "therapeuticArea": "Immunology",
+    "enrollment": {
+      "current": 15,
+      "target": 100
+    },
+    "timeline": {
+      "startDate": "2026-01-10",
+      "endDate": "2026-10-31",
+      "elapsedPercent": 30,
+      "timeRemaining": "6 months remaining",
+      "daysRemaining": 180,
+      "patientsBehindTarget": 25
+    },
+    "metrics": {
+      "sitesCount": 7,
+      "activeSites": 4,
+      "sitesAtRisk": 2,
+      "sitesNeedAttention": 1,
+      "dropRate": 15,
+      "complianceScore": 3.2,
+      "openIssuesCount": 2
+    },
+    "monthlyTrend": [],
+    "sites": [],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v1.2",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-149830",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "April 05, 2026",
+      "preparedBy": "DR B. SMITH",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2026-01-10",
+    "lastUpdated": "2026-04-05",
+    "description": "Randomized placebo-controlled trial evaluating live attenuated varicella zoster booster in immunocompromised adolescents.",
+    "primaryEndpoint": "Confirmed incidence of breakthrough varicella infection over 12 months"
+  },
+  {
+    "id": "INFLUENZA-2024",
+    "title": "Quadrivalent Recombinant Influenza Prophylaxis",
+    "protocolNumber": "INFLUENZA-2024",
+    "sponsor": "National Institute of Allergy",
+    "phase": "Phase I",
+    "status": "Active",
+    "riskLevel": "Low",
+    "principalInvestigator": "Dr. James O'Connor",
+    "researchManager": "DR C. BROWN",
+    "therapeuticArea": "Infectious Disease",
+    "enrollment": {
+      "current": 25,
+      "target": 100
+    },
+    "timeline": {
+      "startDate": "2026-03-01",
+      "endDate": "2026-09-30",
+      "elapsedPercent": 25,
+      "timeRemaining": "5 months remaining",
+      "daysRemaining": 155,
+      "patientsBehindTarget": 0
+    },
+    "metrics": {
+      "sitesCount": 12,
+      "activeSites": 10,
+      "sitesAtRisk": 0,
+      "sitesNeedAttention": 0,
+      "dropRate": 2,
+      "complianceScore": 4.9,
+      "openIssuesCount": 0
+    },
+    "monthlyTrend": [],
+    "sites": [],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v1.0",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-152003",
+      "reportingPeriod": "Mar 2026 - Apr 2026",
+      "reportDate": "April 18, 2026",
+      "preparedBy": "DR C. BROWN",
+      "reportingPeriodEnd": "Apr 30, 2026"
+    },
+    "startDate": "2026-03-01",
+    "lastUpdated": "2026-04-18",
+    "description": "First-in-human dose-escalation safety study of next-generation quadrivalent nanoparticle influenza vaccine.",
+    "primaryEndpoint": "Frequency and severity of solicited local and systemic reactogenicity within 7 days post-injection"
+  },
+  {
+    "id": "MUMPS-2024",
+    "title": "Epidemic Parotitis Neutralizing Antibody Persistence",
+    "protocolNumber": "MUMPS-2024",
+    "sponsor": "Public Health Foundation",
+    "phase": "Phase IV",
+    "status": "Inactive",
+    "riskLevel": "Medium",
+    "principalInvestigator": "Dr. Laura Patel",
+    "researchManager": "DR D. JOHNSON",
+    "therapeuticArea": "Infectious Disease",
+    "enrollment": {
+      "current": 5,
+      "target": 100
+    },
+    "timeline": {
+      "startDate": "2025-06-01",
+      "endDate": "2026-05-31",
+      "elapsedPercent": 90,
+      "timeRemaining": "1 month remaining",
+      "daysRemaining": 30,
+      "patientsBehindTarget": 60
+    },
+    "metrics": {
+      "sitesCount": 8,
+      "activeSites": 2,
+      "sitesAtRisk": 3,
+      "sitesNeedAttention": 2,
+      "dropRate": 25,
+      "complianceScore": 2.9,
+      "openIssuesCount": 3
+    },
+    "monthlyTrend": [],
+    "sites": [],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v2.0",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-141992",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "March 30, 2026",
+      "preparedBy": "DR D. JOHNSON",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2025-06-01",
+    "lastUpdated": "2026-03-30",
+    "description": "Post-market surveillance study of mumps antibody persistence in university student populations receiving a third MMR dose.",
+    "primaryEndpoint": "Plaque reduction neutralization test (PRNT) antibody titers at month 12"
+  },
+  {
+    "id": "RUBELLA-2024",
+    "title": "Congenital Rubella Syndrome Maternal Protection Trial",
+    "protocolNumber": "RUBELLA-2024",
+    "sponsor": "Maternal & Child Health Trust",
+    "phase": "Phase III",
+    "status": "Active",
+    "riskLevel": "Medium",
+    "principalInvestigator": "Dr. David Kim",
+    "researchManager": "DR E. WILLIAMS",
+    "therapeuticArea": "Infectious Disease",
+    "enrollment": {
+      "current": 18,
+      "target": 100
+    },
+    "timeline": {
+      "startDate": "2025-09-15",
+      "endDate": "2026-12-31",
+      "elapsedPercent": 45,
+      "timeRemaining": "8 months remaining",
+      "daysRemaining": 250,
+      "patientsBehindTarget": 20
+    },
+    "metrics": {
+      "sitesCount": 11,
+      "activeSites": 8,
+      "sitesAtRisk": 2,
+      "sitesNeedAttention": 1,
+      "dropRate": 11,
+      "complianceScore": 3.7,
+      "openIssuesCount": 1
+    },
+    "monthlyTrend": [],
+    "sites": [],
+    "keyFindings": [],
+    "regulatory": {
+      "protocolVersion": "v1.1",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-147332",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "April 08, 2026",
+      "preparedBy": "DR E. WILLIAMS",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2025-09-15",
+    "lastUpdated": "2026-04-08",
+    "description": "Multi-center evaluation of rubella seroprotection in reproductive-age females following accelerated vaccination scheduling.",
+    "primaryEndpoint": "Rubella IgG seropositivity rate at 6 months post-vaccination"
   }
 ]

@@ -11,6 +11,8 @@ const STATUS_STYLES: Record<ProjectStatus, string> = {
   Recruiting: 'bg-blue-50 text-blue-700 border-blue-200',
   Completed: 'bg-slate-50 text-slate-700 border-slate-200',
   Suspended: 'bg-amber-50 text-amber-700 border-amber-200',
+  'On Hold': 'bg-amber-50 text-amber-700 border-amber-200',
+  Inactive: 'bg-rose-50 text-rose-700 border-rose-200',
 };
 
 const STATUS_DOT_COLORS: Record<ProjectStatus, string> = {
@@ -18,6 +20,8 @@ const STATUS_DOT_COLORS: Record<ProjectStatus, string> = {
   Recruiting: 'bg-blue-500',
   Completed: 'bg-slate-400',
   Suspended: 'bg-amber-500',
+  'On Hold': 'bg-amber-500',
+  Inactive: 'bg-rose-400',
 };
 
 export const StatusBadge: FC<StatusBadgeProps> = ({ status, className = '' }) => {
