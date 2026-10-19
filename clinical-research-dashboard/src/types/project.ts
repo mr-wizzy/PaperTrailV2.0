@@ -1,5 +1,9 @@
 export type ResearchPhase = "Phase I" | "Phase II" | "Phase III" | "Phase IV";
 export type ProjectStatus = "Active" | "Recruiting" | "Completed" | "Suspended";
+export type TherapeuticArea = "Oncology" | "Cardiology" | "Neurology" | "Immunology";
+
+export type StatusFilter = "All Statuses" | ProjectStatus;
+export type AreaFilter = "All Areas" | TherapeuticArea;
 
 export interface ClinicalProject {
   id: string;
@@ -8,7 +12,7 @@ export interface ClinicalProject {
   phase: ResearchPhase;
   status: ProjectStatus;
   principalInvestigator: string;
-  therapeuticArea: "Oncology" | "Cardiology" | "Neurology" | "Immunology";
+  therapeuticArea: TherapeuticArea;
   enrollment: {
     current: number;
     target: number;
@@ -18,3 +22,4 @@ export interface ClinicalProject {
   description: string;
   primaryEndpoint: string;
 }
+
