@@ -55,7 +55,7 @@ export const StudyOverview: FC<StudyOverviewProps> = ({
       />
 
       {/* Header Banner */}
-      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div className="space-y-2">
           {/* Badges */}
           <div className="flex flex-wrap items-center gap-2">
@@ -78,7 +78,7 @@ export const StudyOverview: FC<StudyOverviewProps> = ({
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 shrink-0">
           <button
             type="button"
             onClick={() => onNavigateToReport(project.id)}

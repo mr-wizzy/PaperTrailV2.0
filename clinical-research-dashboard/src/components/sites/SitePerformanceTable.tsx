@@ -34,19 +34,19 @@ export const SitePerformanceTable: FC<SitePerformanceTableProps> = ({
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-gray-100 bg-gray-50/50">
-              <th scope="col" className="py-3.5 pl-6 pr-4 text-[11px] font-bold uppercase tracking-wider text-gray-500">
+              <th scope="col" className="py-3.5 pl-4 sm:pl-6 pr-3 text-[11px] font-bold uppercase tracking-wider text-gray-500">
                 SITE
               </th>
-              <th scope="col" className="py-3.5 px-4 text-[11px] font-bold uppercase tracking-wider text-gray-500">
+              <th scope="col" className="py-3.5 px-3 sm:px-4 text-[11px] font-bold uppercase tracking-wider text-gray-500">
                 ENROLLED
               </th>
-              <th scope="col" className="py-3.5 px-4 text-[11px] font-bold uppercase tracking-wider text-gray-500 min-w-[160px]">
+              <th scope="col" className="py-3.5 px-3 sm:px-4 text-[11px] font-bold uppercase tracking-wider text-gray-500 min-w-[130px] sm:min-w-[160px]">
                 DROP-OFF
               </th>
-              <th scope="col" className="py-3.5 px-4 text-[11px] font-bold uppercase tracking-wider text-gray-500">
+              <th scope="col" className="py-3.5 px-3 sm:px-4 text-[11px] font-bold uppercase tracking-wider text-gray-500">
                 COMPLIANCE
               </th>
-              <th scope="col" className="py-3.5 pl-4 pr-6 text-[11px] font-bold uppercase tracking-wider text-gray-500 text-right">
+              <th scope="col" className="py-3.5 pl-3 pr-4 sm:pr-6 text-[11px] font-bold uppercase tracking-wider text-gray-500 text-right">
                 RISK
               </th>
             </tr>
@@ -63,14 +63,14 @@ export const SitePerformanceTable: FC<SitePerformanceTableProps> = ({
               return (
                 <tr key={site.id} className="hover:bg-slate-50/70 transition-colors">
                   {/* Site Name */}
-                  <td className="py-4 pl-6 pr-4 whitespace-nowrap">
+                  <td className="py-3.5 pl-4 sm:pl-6 pr-3 whitespace-nowrap">
                     <span className="text-xs font-bold text-gray-900 uppercase tracking-tight">
                       {site.name}
                     </span>
                   </td>
 
                   {/* Enrolled Status Pill */}
-                  <td className="py-4 px-4 whitespace-nowrap">
+                  <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap">
                     <span
                       className={`inline-flex items-center px-2.5 py-0.5 rounded text-2xs font-bold uppercase tracking-wider border ${statusClass}`}
                     >
@@ -79,29 +79,29 @@ export const SitePerformanceTable: FC<SitePerformanceTableProps> = ({
                   </td>
 
                   {/* Drop-Off Rate Bar */}
-                  <td className="py-4 px-4">
-                    <div className="flex items-center gap-3">
+                  <td className="py-3.5 px-3 sm:px-4">
+                    <div className="flex items-center gap-2.5">
                       <div className="flex-1 bg-slate-100 rounded-full h-2 overflow-hidden">
                         <div
                           className={`h-full rounded-full ${dropColor}`}
                           style={{ width: `${Math.min(100, Math.max(site.dropOffRate > 0 ? 3 : 0, site.dropOffRate))}%` }}
                         />
                       </div>
-                      <span className="text-xs font-semibold text-gray-700 w-9 text-right shrink-0">
+                      <span className="text-xs font-semibold text-gray-700 w-8 text-right shrink-0">
                         {site.dropOffRate}%
                       </span>
                     </div>
                   </td>
 
                   {/* Compliance */}
-                  <td className="py-4 px-4 whitespace-nowrap">
+                  <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap">
                     <span className={`text-xs uppercase tracking-wider ${complianceClass}`}>
                       {site.compliance}
                     </span>
                   </td>
 
                   {/* Risk */}
-                  <td className="py-4 pl-4 pr-6 text-right whitespace-nowrap">
+                  <td className="py-3.5 pl-3 pr-4 sm:pr-6 text-right whitespace-nowrap">
                     <RiskBadge risk={site.riskLevel} variant="text" />
                   </td>
                 </tr>

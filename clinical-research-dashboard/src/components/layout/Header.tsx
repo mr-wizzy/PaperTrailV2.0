@@ -16,17 +16,17 @@ export const Header: FC<HeaderProps> = ({
     <header className="bg-white border-b border-gray-200/90 sticky top-0 z-30">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-4">
-          {/* Mobile Menu Toggle & Logo for mobile */}
+          {/* Mobile & Tablet Menu Toggle & Logo */}
           <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={onOpenMobileMenu}
-              className="md:hidden p-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
+              className="lg:hidden p-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
               aria-label="Open navigation menu"
             >
               <Menu className="w-5 h-5" />
             </button>
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <span className="text-lg font-bold tracking-tight text-gray-900">
                 Paper<span className="text-blue-600 font-extrabold italic">Trail</span>
               </span>
@@ -34,7 +34,7 @@ export const Header: FC<HeaderProps> = ({
           </div>
 
           {/* Global Search Bar */}
-          <div className="flex-1 max-w-2xl mx-auto hidden sm:block">
+          <div className="flex-1 max-w-xl mx-auto hidden sm:block">
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
                 <Search className="h-4 w-4" aria-hidden="true" />
@@ -70,7 +70,7 @@ export const Header: FC<HeaderProps> = ({
               <div className="w-9 h-9 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-600 font-bold text-xs" aria-hidden="true">
                 <User className="w-4 h-4 text-slate-500" />
               </div>
-              <span className="hidden lg:block text-xs font-bold tracking-wide text-gray-800">
+              <span className="hidden md:block text-xs font-bold tracking-wide text-gray-800">
                 JOHN HENRY
               </span>
             </div>

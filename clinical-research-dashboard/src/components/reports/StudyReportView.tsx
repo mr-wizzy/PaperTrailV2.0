@@ -93,7 +93,7 @@ export const StudyReportView: FC<StudyReportViewProps> = ({
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-2.5 shrink-0 print:hidden">
+        <div className="flex flex-wrap items-center gap-2.5 shrink-0 print:hidden">
           <button
             type="button"
             onClick={() => onNavigateToStudyOverview(project.id)}

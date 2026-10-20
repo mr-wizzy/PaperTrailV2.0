@@ -41,10 +41,10 @@ export const Sidebar: FC<SidebarProps> = ({
 }) => {
   return (
     <>
-      {/* Mobile Backdrop */}
+      {/* Mobile & Tablet Backdrop */}
       {isOpenMobile && (
         <div
-          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs md:hidden"
+          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs lg:hidden"
           onClick={onCloseMobile}
           aria-hidden="true"
         />
@@ -52,8 +52,8 @@ export const Sidebar: FC<SidebarProps> = ({
 
       {/* Sidebar Container */}
       <aside
-        className={`fixed md:sticky top-0 left-0 z-50 h-screen w-64 bg-white border-r border-gray-200/90 flex flex-col shrink-0 transition-transform duration-300 ease-in-out md:translate-x-0 ${
-          isOpenMobile ? 'translate-x-0 shadow-2xl' : '-translate-x-full md:translate-x-0'
+        className={`fixed lg:sticky top-0 left-0 z-50 h-screen w-64 bg-white border-r border-gray-200/90 flex flex-col shrink-0 transition-transform duration-300 ease-in-out lg:translate-x-0 ${
+          isOpenMobile ? 'translate-x-0 shadow-2xl' : '-translate-x-full lg:translate-x-0'
         }`}
       >
         {/* Brand Header */}
@@ -64,11 +64,11 @@ export const Sidebar: FC<SidebarProps> = ({
             </span>
           </div>
 
-          {/* Close button for mobile */}
+          {/* Close button for mobile and tablet drawer */}
           <button
             type="button"
             onClick={onCloseMobile}
-            className="md:hidden p-1.5 text-gray-500 hover:text-gray-800 rounded-lg hover:bg-gray-100"
+            className="lg:hidden p-1.5 text-gray-500 hover:text-gray-800 rounded-lg hover:bg-gray-100 min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
             aria-label="Close menu"
           >
             <X className="w-5 h-5" />
@@ -103,7 +103,7 @@ export const Sidebar: FC<SidebarProps> = ({
         </nav>
 
         {/* Bottom User Quick View / Meta */}
-        <div className="p-4 border-t border-gray-100 hidden md:block">
+        <div className="p-4 border-t border-gray-100 hidden lg:block">
           <div className="bg-slate-50/80 rounded-xl p-3 border border-slate-200/60">
             <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-0.5">
               Registry Environment

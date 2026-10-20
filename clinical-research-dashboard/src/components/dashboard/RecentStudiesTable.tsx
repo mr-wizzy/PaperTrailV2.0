@@ -23,19 +23,19 @@ export const RecentStudiesTable: FC<RecentStudiesTableProps> = ({
         <table className="hidden md:table w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-gray-100 bg-gray-50/50">
-              <th scope="col" className="py-3.5 pl-6 pr-4 text-[11px] font-bold uppercase tracking-wider text-blue-700">
+              <th scope="col" className="py-3.5 pl-4 sm:pl-6 pr-3 text-[11px] font-bold uppercase tracking-wider text-blue-700">
                 STUDY
               </th>
-              <th scope="col" className="py-3.5 px-4 text-[11px] font-bold uppercase tracking-wider text-blue-700">
+              <th scope="col" className="py-3.5 px-3 sm:px-4 text-[11px] font-bold uppercase tracking-wider text-blue-700">
                 STATUS
               </th>
-              <th scope="col" className="py-3.5 px-4 text-[11px] font-bold uppercase tracking-wider text-blue-700 min-w-[200px]">
+              <th scope="col" className="py-3.5 px-3 sm:px-4 text-[11px] font-bold uppercase tracking-wider text-blue-700 min-w-[150px] md:min-w-[190px]">
                 ENROLMENT
               </th>
-              <th scope="col" className="py-3.5 px-4 text-[11px] font-bold uppercase tracking-wider text-blue-700">
+              <th scope="col" className="py-3.5 px-3 sm:px-4 text-[11px] font-bold uppercase tracking-wider text-blue-700">
                 RISK LEVEL
               </th>
-              <th scope="col" className="py-3.5 pl-4 pr-6 text-[11px] font-bold uppercase tracking-wider text-blue-700 text-right">
+              <th scope="col" className="py-3.5 pl-3 pr-4 sm:pr-6 text-[11px] font-bold uppercase tracking-wider text-blue-700 text-right">
                 SITES AT RISK
               </th>
             </tr>
@@ -67,7 +67,7 @@ export const RecentStudiesTable: FC<RecentStudiesTableProps> = ({
                   className="group hover:bg-slate-50/80 transition-colors cursor-pointer"
                 >
                   {/* Study & Phase */}
-                  <td className="py-4 pl-6 pr-4">
+                  <td className="py-3.5 pl-4 sm:pl-6 pr-3">
                     <div className="flex flex-col">
                       <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                         {project.id}
@@ -79,34 +79,34 @@ export const RecentStudiesTable: FC<RecentStudiesTableProps> = ({
                   </td>
 
                   {/* Status */}
-                  <td className="py-4 px-4 whitespace-nowrap">
+                  <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap">
                     <span className="text-xs font-bold text-gray-800 uppercase tracking-wide">
                       {project.status.toUpperCase()}
                     </span>
                   </td>
 
                   {/* Enrolment Bar */}
-                  <td className="py-4 px-4">
-                    <div className="flex items-center gap-3">
+                  <td className="py-3.5 px-3 sm:px-4">
+                    <div className="flex items-center gap-2.5">
                       <div className="flex-1 bg-slate-100 rounded-full h-2.5 overflow-hidden">
                         <div
                           className={`h-full rounded-full ${barColor}`}
                           style={{ width: `${Math.min(100, Math.max(2, percentage))}%` }}
                         />
                       </div>
-                      <span className="text-xs font-bold text-gray-700 w-9 text-right shrink-0">
+                      <span className="text-xs font-bold text-gray-700 w-8 text-right shrink-0">
                         {percentage}%
                       </span>
                     </div>
                   </td>
 
                   {/* Risk Level */}
-                  <td className="py-4 px-4 whitespace-nowrap">
+                  <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap">
                     <RiskBadge risk={project.riskLevel} variant="text" />
                   </td>
 
                   {/* Sites at Risk */}
-                  <td className="py-4 pl-4 pr-6 text-right whitespace-nowrap">
+                  <td className="py-3.5 pl-3 pr-4 sm:pr-6 text-right whitespace-nowrap">
                     <span
                       className={`text-xs font-bold uppercase tracking-wide ${
                         sitesAtRisk > 2
