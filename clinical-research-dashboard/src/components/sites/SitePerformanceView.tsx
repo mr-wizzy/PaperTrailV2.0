@@ -199,17 +199,17 @@ export const SitePerformanceView: FC<SitePerformanceViewProps> = ({
               const siteRate = site.target > 0 ? Math.round((site.enrolled / site.target) * 100) : 0;
 
               return (
-                <div key={site.id} className="space-y-1">
-                  <div className="text-xs font-bold text-gray-800 uppercase tracking-tight">
+                <div key={site.id} className="space-y-1.5">
+                  <div className="text-[11px] sm:text-xs font-semibold text-gray-800 uppercase tracking-tight truncate">
                     {site.name}
                   </div>
-                  <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                  <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
                     <div
                       className="h-full bg-blue-600 rounded-full transition-all duration-300"
                       style={{ width: `${Math.min(100, Math.max(siteRate > 0 ? 3 : 0, siteRate))}%` }}
                     />
                   </div>
-                  <div className="text-[11px] text-gray-500 font-medium">
+                  <div className="text-[10px] sm:text-[11px] text-gray-400 font-semibold uppercase tracking-wider">
                     {site.enrolled} / {site.target} patients
                   </div>
                 </div>

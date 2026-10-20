@@ -24,7 +24,7 @@ const RISK_TEXT_STYLES: Record<RiskLevel, string> = {
 export const RiskBadge: FC<RiskBadgeProps> = ({ risk, className = '', variant = 'pill' }) => {
   if (variant === 'text') {
     return (
-      <span className={`text-xs uppercase tracking-wider ${RISK_TEXT_STYLES[risk] || 'text-gray-600'} ${className}`}>
+      <span className={`text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider ${RISK_TEXT_STYLES[risk] || 'text-gray-600'} ${className}`}>
         {risk}
       </span>
     );
@@ -32,7 +32,7 @@ export const RiskBadge: FC<RiskBadgeProps> = ({ risk, className = '', variant = 
 
   return (
     <span
-      className={`inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold uppercase tracking-wider border ${
+      className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider border ${
         RISK_PILL_STYLES[risk] || 'bg-gray-50 text-gray-700 border-gray-200'
       } ${className}`}
     >

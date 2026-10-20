@@ -46,19 +46,19 @@ export const SitePreviewList: FC<SitePreviewListProps> = ({
 
             return (
               <div key={site.id} className="space-y-1.5">
-                <div className="flex items-center justify-between text-xs font-bold">
-                  <span className="text-gray-800 uppercase tracking-tight">{site.name}</span>
+                <div className="flex items-center justify-between text-[11px] sm:text-xs font-semibold">
+                  <span className="text-gray-800 uppercase tracking-tight truncate max-w-[200px]">{site.name}</span>
                   <span className={textColor}>{percentage}%</span>
                 </div>
 
-                <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
                   <div
                     className={`h-full rounded-full transition-all duration-300 ${barColor}`}
                     style={{ width: `${Math.min(100, Math.max(2, percentage))}%` }}
                   />
                 </div>
 
-                <div className="text-[11px] text-gray-400 font-medium">
+                <div className="text-[10px] sm:text-[11px] text-gray-400 font-semibold uppercase tracking-wider">
                   {site.enrolled} / {site.target} patients
                 </div>
               </div>
