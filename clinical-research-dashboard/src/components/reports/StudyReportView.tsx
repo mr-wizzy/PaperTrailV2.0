@@ -72,14 +72,16 @@ export const StudyReportView: FC<StudyReportViewProps> = ({
       )}
 
       {/* Breadcrumbs */}
-      <Breadcrumbs
-        items={[
-          { label: 'Dashboard', onClick: onNavigateHome },
-          { label: 'Studies', onClick: onNavigateToStudies },
-          { label: project.id, onClick: () => onNavigateToStudyOverview(project.id) },
-          { label: 'Report & Export', active: true },
-        ]}
-      />
+      <div className="print:hidden">
+        <Breadcrumbs
+          items={[
+            { label: 'Dashboard', onClick: onNavigateHome },
+            { label: 'Studies', onClick: onNavigateToStudies },
+            { label: project.id, onClick: () => onNavigateToStudyOverview(project.id) },
+            { label: 'Report & Export', active: true },
+          ]}
+        />
+      </div>
 
       {/* Header Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -256,6 +258,11 @@ export const StudyReportView: FC<StudyReportViewProps> = ({
           <ProtocolMetricsCard project={project} />
         </div>
       </div>
+
+      {/* Print-Only Document Footer */}
+      <footer className="hidden print:block pt-6 border-t border-gray-200 text-center text-[10px] text-gray-400 font-mono">
+        CONFIDENTIAL CLINICAL MONITORING REPORT • GENERATED VIA PAPERTRAIL AUDIT ENGINE • REPOSITORY RECORD VERIFIED
+      </footer>
     </div>
   );
 };

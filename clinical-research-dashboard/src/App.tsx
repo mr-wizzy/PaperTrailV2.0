@@ -9,11 +9,12 @@ import { StudyReportView } from './components/reports/StudyReportView';
 import type { ClinicalProject } from './types/project';
 import rawProjects from './data/projects.json';
 
-const projects = rawProjects as ClinicalProject[];
+const initialProjects = rawProjects as ClinicalProject[];
 
 type ViewMode = 'dashboard' | 'studies' | 'study' | 'sites' | 'report';
 
 function App() {
+  const [projects, setProjects] = useState<ClinicalProject[]>(initialProjects);
   const [activeView, setActiveView] = useState<ViewMode>('dashboard');
   const [selectedStudyId, setSelectedStudyId] = useState<string | null>('COVID-2022');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -23,7 +24,7 @@ function App() {
   const selectedProject = useMemo(() => {
     const id = selectedStudyId || 'COVID-2022';
     return projects.find((p) => p.id === id) || projects[0] || null;
-  }, [selectedStudyId]);
+  }, [projects, selectedStudyId]);
 
   // Synchronized Navigation Function
   const navigateTo = useCallback((view: ViewMode, id?: string) => {
@@ -57,6 +58,16 @@ function App() {
     }
   }, [navigateTo, selectedStudyId]);
 
+  // Handler to register a new study in active session state
+  const handleAddStudy = useCallback(
+    (newProject: ClinicalProject) => {
+      setProjects((prev) => [newProject, ...prev]);
+      setSelectedStudyId(newProject.id);
+      navigateTo('study', newProject.id);
+    },
+    [navigateTo]
+  );
+
   // URL state synchronizer (runs on mount and on popstate)
   useEffect(() => {
     const syncStateFromUrl = () => {
@@ -83,7 +94,7 @@ function App() {
     return () => {
       window.removeEventListener('popstate', syncStateFromUrl);
     };
-  }, []);
+  }, [projects]);
 
   // Map activeView to sidebar key
   const activeSidebarKey: NavItemKey =
@@ -131,6 +142,7 @@ function App() {
               projects={projects}
               onSelectStudy={(id) => navigateTo('study', id)}
               onNavigateHome={() => navigateTo('dashboard')}
+              onAddStudy={handleAddStudy}
             />
           )}
 

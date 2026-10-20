@@ -23,7 +23,7 @@
       "patientsBehindTarget": 947
     },
     "metrics": {
-      "sitesCount": 34,
+      "sitesCount": 7,
       "activeSites": 6,
       "sitesAtRisk": 4,
       "sitesNeedAttention": 2,
@@ -32,43 +32,91 @@
       "openIssuesCount": 3
     },
     "monthlyTrend": [
-      { "month": "Jan", "actual": 20, "target": 40 },
-      { "month": "Feb", "actual": 45, "target": 70 },
-      { "month": "Mar", "actual": 90, "target": 110 },
-      { "month": "Apr", "actual": 135, "target": 140 },
-      { "month": "May", "actual": 160, "target": 170 },
-      { "month": "Jun", "actual": 145, "target": 185 },
-      { "month": "Jul", "actual": 170, "target": 195 },
-      { "month": "Aug", "actual": 165, "target": 205 },
-      { "month": "Sept", "actual": 160, "target": 215 },
-      { "month": "Oct", "actual": 195, "target": 225 },
-      { "month": "Nov", "actual": 210, "target": 235 },
-      { "month": "Dec", "actual": 240, "target": 250 }
+      {
+        "month": "Jan",
+        "actual": 20,
+        "target": 40
+      },
+      {
+        "month": "Feb",
+        "actual": 45,
+        "target": 70
+      },
+      {
+        "month": "Mar",
+        "actual": 90,
+        "target": 110
+      },
+      {
+        "month": "Apr",
+        "actual": 135,
+        "target": 140
+      },
+      {
+        "month": "May",
+        "actual": 160,
+        "target": 170
+      },
+      {
+        "month": "Jun",
+        "actual": 145,
+        "target": 185
+      },
+      {
+        "month": "Jul",
+        "actual": 170,
+        "target": 195
+      },
+      {
+        "month": "Aug",
+        "actual": 165,
+        "target": 205
+      },
+      {
+        "month": "Sept",
+        "actual": 160,
+        "target": 215
+      },
+      {
+        "month": "Oct",
+        "actual": 195,
+        "target": 225
+      },
+      {
+        "month": "Nov",
+        "actual": 210,
+        "target": 235
+      },
+      {
+        "month": "Dec",
+        "actual": 240,
+        "target": 250
+      }
     ],
     "sites": [
       {
         "id": "site-1",
-        "name": "IBADAN CENTER",
+        "name": "IBADAN MEDICAL CENTER",
         "status": "Ongoing",
         "enrolled": 15,
         "target": 75,
         "dropOffRate": 14,
-        "compliance": "High",
-        "riskLevel": "Low"
+        "compliance": "Low",
+        "riskLevel": "Critical"
       },
       {
         "id": "site-2",
-        "name": "LAGOS CENTER",
+        "name": "LAGOS COMMUNITY HEALTH",
         "status": "Ongoing",
         "enrolled": 30,
         "target": 60,
         "dropOffRate": 45,
         "compliance": "Medium",
-        "riskLevel": "Medium"
+        "riskLevel": "High"
       },
       {
         "id": "site-3",
-        "name": "ABUJA CENTER",
+        "name": "ABUJA WELLNESS CENTER",
         "status": "Planned",
         "enrolled": 10,
         "target": 50,
@@ -78,27 +126,27 @@
       },
       {
         "id": "site-4",
-        "name": "KANO CENTER",
+        "name": "KANO HEALTH SERVICES",
         "status": "Ongoing",
         "enrolled": 24,
         "target": 60,
         "dropOffRate": 30,
         "compliance": "High",
-        "riskLevel": "Low"
+        "riskLevel": "Medium"
       },
       {
         "id": "site-5",
-        "name": "CALABAR ZONE",
+        "name": "CALABAR ZONE HOSPITAL",
         "status": "Completed",
         "enrolled": 80,
         "target": 80,
         "dropOffRate": 100,
         "compliance": "Medium",
-        "riskLevel": "Medium"
+        "riskLevel": "Low"
       },
       {
         "id": "site-6",
-        "name": "KADUNA PROJECT",
+        "name": "KADUNA CLINICAL RESEARCH",
         "status": "Pending",
         "enrolled": 0,
         "target": 80,
@@ -108,7 +156,7 @@
       },
       {
         "id": "site-7",
-        "name": "ENUGU CENTER",
+        "name": "ENUGU SPECIALIST CENTER",
         "status": "Ongoing",
         "enrolled": 18,
         "target": 90,
@@ -147,7 +195,7 @@
       "reportingPeriod": "Jan 2026 - Apr 2026",
       "reportDate": "January 15, 2026",
       "preparedBy": "Dr Chinonso Egemma (Research monitor)",
-      "reportingPeriodEnd": "Apr 30, 2024"
+      "reportingPeriodEnd": "Apr 30, 2026"
     },
     "startDate": "2026-01-24",
     "lastUpdated": "2026-04-23",
@@ -178,8 +226,8 @@
       "patientsBehindTarget": 30
     },
     "metrics": {
-      "sitesCount": 23,
-      "activeSites": 18,
+      "sitesCount": 4,
+      "activeSites": 4,
       "sitesAtRisk": 1,
       "sitesNeedAttention": 1,
       "dropRate": 8,
@@ -187,23 +235,71 @@
       "openIssuesCount": 1
     },
     "monthlyTrend": [
-      { "month": "Jan", "actual": 15, "target": 18 },
-      { "month": "Feb", "actual": 32, "target": 35 },
-      { "month": "Mar", "actual": 55, "target": 50 },
-      { "month": "Apr", "actual": 75, "target": 70 },
-      { "month": "May", "actual": 98, "target": 95 },
-      { "month": "Jun", "actual": 120, "target": 115 },
-      { "month": "Jul", "actual": 140, "target": 135 },
-      { "month": "Aug", "actual": 158, "target": 160 },
-      { "month": "Sept", "actual": 172, "target": 180 },
-      { "month": "Oct", "actual": 185, "target": 200 },
-      { "month": "Nov", "actual": 195, "target": 220 },
-      { "month": "Dec", "actual": 200, "target": 240 }
+      {
+        "month": "Jan",
+        "actual": 15,
+        "target": 18
+      },
+      {
+        "month": "Feb",
+        "actual": 32,
+        "target": 35
+      },
+      {
+        "month": "Mar",
+        "actual": 55,
+        "target": 50
+      },
+      {
+        "month": "Apr",
+        "actual": 75,
+        "target": 70
+      },
+      {
+        "month": "May",
+        "actual": 98,
+        "target": 95
+      },
+      {
+        "month": "Jun",
+        "actual": 120,
+        "target": 115
+      },
+      {
+        "month": "Jul",
+        "actual": 140,
+        "target": 135
+      },
+      {
+        "month": "Aug",
+        "actual": 158,
+        "target": 160
+      },
+      {
+        "month": "Sept",
+        "actual": 172,
+        "target": 180
+      },
+      {
+        "month": "Oct",
+        "actual": 185,
+        "target": 200
+      },
+      {
+        "month": "Nov",
+        "actual": 195,
+        "target": 220
+      },
+      {
+        "month": "Dec",
+        "actual": 200,
+        "target": 240
+      }
     ],
     "sites": [
       {
         "id": "site-ls-1",
-        "name": "BENIN CLINICAL CENTER",
+        "name": "BENIN CLINICAL RESEARCH CENTER",
         "status": "Ongoing",
         "enrolled": 120,
         "target": 150,
@@ -215,14 +311,49 @@
         "id": "site-ls-2",
         "name": "OWO SPECIALIST HOSPITAL",
         "status": "Ongoing",
-        "enrolled": 80,
-        "target": 150,
+        "enrolled": 50,
+        "target": 80,
         "dropOffRate": 12,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-ls-3",
+        "name": "IRRUA TEACHING HOSPITAL",
+        "status": "Ongoing",
+        "enrolled": 25,
+        "target": 50,
+        "dropOffRate": 6,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-ls-4",
+        "name": "PLATEAU EPIDEMIOLOGY UNIT",
+        "status": "Planned",
+        "enrolled": 5,
+        "target": 20,
+        "dropOffRate": 0,
         "compliance": "Medium",
         "riskLevel": "Medium"
       }
     ],
-    "keyFindings": [],
+    "keyFindings": [
+      {
+        "id": "ls-kf-1",
+        "severity": "High",
+        "title": "Cold-Chain Temperature Excursion During Transport",
+        "description": "Two shipments of monoclonal cocktail investigational product experienced a 4-hour excursion above -20C during transit between Lagos depot and Owo site.",
+        "recommendation": "Quarantine affected product vials, conduct accelerated stability testing, and transition to validated temperature-logging dry ice shippers."
+      },
+      {
+        "id": "ls-kf-2",
+        "severity": "Medium",
+        "title": "EDC Data Entry Latency Across Rural Satellite Clinics",
+        "description": "Median time to adverse event electronic CRF entry exceeded the 48-hour protocol threshold by 36 hours at Irrua facility due to connectivity outages.",
+        "recommendation": "Implement offline-capable tablet sync workflows for trial coordinators and equip central research room with redundant cellular hotspots."
+      }
+    ],
     "regulatory": {
       "protocolVersion": "v1.4",
       "irbStatus": "Approved",
@@ -270,21 +401,118 @@
       "openIssuesCount": 0
     },
     "monthlyTrend": [
-      { "month": "Jan", "actual": 25, "target": 20 },
-      { "month": "Feb", "actual": 50, "target": 40 },
-      { "month": "Mar", "actual": 75, "target": 65 },
-      { "month": "Apr", "actual": 100, "target": 90 },
-      { "month": "May", "actual": 120, "target": 115 },
-      { "month": "Jun", "actual": 140, "target": 135 },
-      { "month": "Jul", "actual": 150, "target": 150 },
-      { "month": "Aug", "actual": 155, "target": 160 },
-      { "month": "Sept", "actual": 160, "target": 170 },
-      { "month": "Oct", "actual": 165, "target": 180 },
-      { "month": "Nov", "actual": 167, "target": 190 },
-      { "month": "Dec", "actual": 167, "target": 200 }
+      {
+        "month": "Jan",
+        "actual": 25,
+        "target": 20
+      },
+      {
+        "month": "Feb",
+        "actual": 50,
+        "target": 40
+      },
+      {
+        "month": "Mar",
+        "actual": 75,
+        "target": 65
+      },
+      {
+        "month": "Apr",
+        "actual": 100,
+        "target": 90
+      },
+      {
+        "month": "May",
+        "actual": 120,
+        "target": 115
+      },
+      {
+        "month": "Jun",
+        "actual": 140,
+        "target": 135
+      },
+      {
+        "month": "Jul",
+        "actual": 150,
+        "target": 150
+      },
+      {
+        "month": "Aug",
+        "actual": 155,
+        "target": 160
+      },
+      {
+        "month": "Sept",
+        "actual": 160,
+        "target": 170
+      },
+      {
+        "month": "Oct",
+        "actual": 165,
+        "target": 180
+      },
+      {
+        "month": "Nov",
+        "actual": 167,
+        "target": 190
+      },
+      {
+        "month": "Dec",
+        "actual": 167,
+        "target": 200
+      }
     ],
-    "sites": [],
-    "keyFindings": [],
+    "sites": [
+      {
+        "id": "site-who-1",
+        "name": "NAIROBI METROPOLITAN TRIAL CLINIC",
+        "status": "Ongoing",
+        "enrolled": 62,
+        "target": 70,
+        "dropOffRate": 3,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-who-2",
+        "name": "KAMPALA REGIONAL INSTITUTE",
+        "status": "Ongoing",
+        "enrolled": 48,
+        "target": 55,
+        "dropOffRate": 4,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-who-3",
+        "name": "LILONGWE CENTRAL HEALTH HUB",
+        "status": "Ongoing",
+        "enrolled": 35,
+        "target": 45,
+        "dropOffRate": 5,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-who-4",
+        "name": "HARARE SPECIALIZED OUTPATIENT UNIT",
+        "status": "Completed",
+        "enrolled": 22,
+        "target": 30,
+        "dropOffRate": 2,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "who-kf-1",
+        "severity": "Medium",
+        "title": "Temporary Administrative Hold on Routine Screening",
+        "description": "Recruitment reached 84% threshold; planned administrative hold executed pending protocol safety committee review of 24-week viral durability data.",
+        "recommendation": "Maintain existing subject visit adherence and prepare interim safety dossiers for WHO executive submission by May 2026."
+      }
+    ],
     "regulatory": {
       "protocolVersion": "v3.0",
       "irbStatus": "Approved",
@@ -300,6 +528,497 @@
     "primaryEndpoint": "Percentage of participants maintaining undetectable viral load (<50 copies/mL) at 48 weeks"
   },
   {
+    "id": "ONCO-2025-CAR",
+    "title": "Allogeneic CAR-T Cell Infusion in Refractory Multiple Myeloma",
+    "protocolNumber": "ONCO-2025-CAR",
+    "sponsor": "National Cancer Institute",
+    "phase": "Phase III",
+    "status": "Active",
+    "riskLevel": "High",
+    "principalInvestigator": "Dr. Victoria Sterling",
+    "researchManager": "DR MARCUS RIVERA",
+    "therapeuticArea": "Oncology",
+    "enrollment": {
+      "current": 180,
+      "target": 250
+    },
+    "timeline": {
+      "startDate": "2025-01-15",
+      "endDate": "2027-06-30",
+      "elapsedPercent": 42,
+      "timeRemaining": "14 months remaining",
+      "daysRemaining": 425,
+      "patientsBehindTarget": 35
+    },
+    "metrics": {
+      "sitesCount": 4,
+      "activeSites": 4,
+      "sitesAtRisk": 2,
+      "sitesNeedAttention": 1,
+      "dropRate": 14,
+      "complianceScore": 4.1,
+      "openIssuesCount": 2
+    },
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 12,
+        "target": 15
+      },
+      {
+        "month": "Feb",
+        "actual": 28,
+        "target": 30
+      },
+      {
+        "month": "Mar",
+        "actual": 44,
+        "target": 50
+      },
+      {
+        "month": "Apr",
+        "actual": 62,
+        "target": 70
+      },
+      {
+        "month": "May",
+        "actual": 80,
+        "target": 90
+      },
+      {
+        "month": "Jun",
+        "actual": 98,
+        "target": 110
+      },
+      {
+        "month": "Jul",
+        "actual": 116,
+        "target": 130
+      },
+      {
+        "month": "Aug",
+        "actual": 132,
+        "target": 150
+      },
+      {
+        "month": "Sept",
+        "actual": 148,
+        "target": 175
+      },
+      {
+        "month": "Oct",
+        "actual": 160,
+        "target": 200
+      },
+      {
+        "month": "Nov",
+        "actual": 172,
+        "target": 225
+      },
+      {
+        "month": "Dec",
+        "actual": 180,
+        "target": 250
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-car-1",
+        "name": "MEMORIAL CANCER CENTER - BOSTON",
+        "status": "Ongoing",
+        "enrolled": 65,
+        "target": 80,
+        "dropOffRate": 9,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-car-2",
+        "name": "MD ONCOLOGY RESEARCH INSTITUTE",
+        "status": "Ongoing",
+        "enrolled": 52,
+        "target": 75,
+        "dropOffRate": 15,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-car-3",
+        "name": "PACIFIC HEMATOLOGY CONSORTIUM",
+        "status": "Ongoing",
+        "enrolled": 43,
+        "target": 65,
+        "dropOffRate": 18,
+        "compliance": "Medium",
+        "riskLevel": "High"
+      },
+      {
+        "id": "site-car-4",
+        "name": "MIDWEST MEDICAL IMMUNOTHERAPY CLINIC",
+        "status": "Planned",
+        "enrolled": 20,
+        "target": 30,
+        "dropOffRate": 8,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "car-kf-1",
+        "severity": "Critical",
+        "title": "Delayed Cytokine Release Syndrome (CRS) Grading Documentation",
+        "description": "Three grade 2 CRS adverse events at Pacific Hematology experienced reporting delay beyond the mandated 24-hour expedited safety reporting window.",
+        "recommendation": "Implement automated 24/7 telemetry alert integration with the trial electronic data capture system and retrain site fellows on ASTCT consensus grading criteria."
+      },
+      {
+        "id": "car-kf-2",
+        "severity": "High",
+        "title": "Bridging Chemotherapy Protocol Variance",
+        "description": "Variability observed in alkylating agent washout periods prior to CAR-T cell infusion across non-academic trial affiliate sites.",
+        "recommendation": "Issue immediate protocol clarification memo standardizing minimum 14-day lymphodepletion gap before cellular product infusion."
+      }
+    ],
+    "regulatory": {
+      "protocolVersion": "v3.2",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-158902",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "April 14, 2026",
+      "preparedBy": "DR MARCUS RIVERA",
+      "reportingPeriodEnd": "Apr 30, 2026"
+    },
+    "startDate": "2025-01-15",
+    "lastUpdated": "2026-04-14",
+    "description": "Multicenter phase III trial investigating universal off-the-shelf gene-edited allogeneic CAR-T cells targeting BCMA in late-stage relapsed multiple myeloma.",
+    "primaryEndpoint": "Overall Response Rate (ORR) and Progression-Free Survival (PFS) at 18 months"
+  },
+  {
+    "id": "CARDIO-882",
+    "title": "PCSK9 Small Molecule Inhibitor in High-Risk Atherosclerosis",
+    "protocolNumber": "CARDIO-882",
+    "sponsor": "Cardiovascular Health Consortium",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "riskLevel": "Medium",
+    "principalInvestigator": "Dr. Jonathan Hayes",
+    "researchManager": "DR RACHEL WEISS",
+    "therapeuticArea": "Cardiology",
+    "enrollment": {
+      "current": 420,
+      "target": 800
+    },
+    "timeline": {
+      "startDate": "2025-08-01",
+      "endDate": "2027-12-31",
+      "elapsedPercent": 30,
+      "timeRemaining": "20 months remaining",
+      "daysRemaining": 615,
+      "patientsBehindTarget": 60
+    },
+    "metrics": {
+      "sitesCount": 4,
+      "activeSites": 4,
+      "sitesAtRisk": 1,
+      "sitesNeedAttention": 1,
+      "dropRate": 7,
+      "complianceScore": 4.6,
+      "openIssuesCount": 1
+    },
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 30,
+        "target": 45
+      },
+      {
+        "month": "Feb",
+        "actual": 65,
+        "target": 90
+      },
+      {
+        "month": "Mar",
+        "actual": 110,
+        "target": 140
+      },
+      {
+        "month": "Apr",
+        "actual": 160,
+        "target": 195
+      },
+      {
+        "month": "May",
+        "actual": 210,
+        "target": 250
+      },
+      {
+        "month": "Jun",
+        "actual": 260,
+        "target": 310
+      },
+      {
+        "month": "Jul",
+        "actual": 305,
+        "target": 370
+      },
+      {
+        "month": "Aug",
+        "actual": 345,
+        "target": 430
+      },
+      {
+        "month": "Sept",
+        "actual": 375,
+        "target": 490
+      },
+      {
+        "month": "Oct",
+        "actual": 395,
+        "target": 550
+      },
+      {
+        "month": "Nov",
+        "actual": 410,
+        "target": 610
+      },
+      {
+        "month": "Dec",
+        "actual": 420,
+        "target": 670
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-card-1",
+        "name": "HEART & VASCULAR INSTITUTE OF CHICAGO",
+        "status": "Ongoing",
+        "enrolled": 155,
+        "target": 250,
+        "dropOffRate": 5,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-card-2",
+        "name": "SOUTHWEST CARDIOLOGY ASSOCIATES",
+        "status": "Ongoing",
+        "enrolled": 125,
+        "target": 220,
+        "dropOffRate": 8,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-card-3",
+        "name": "PHILADELPHIA CORONARY CARE CENTER",
+        "status": "Ongoing",
+        "enrolled": 90,
+        "target": 180,
+        "dropOffRate": 10,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-card-4",
+        "name": "METRO ATLANTA CARDIOLOGY NETWORK",
+        "status": "Ongoing",
+        "enrolled": 50,
+        "target": 150,
+        "dropOffRate": 6,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "card-kf-1",
+        "severity": "Medium",
+        "title": "LDL Cholesterol Central Lab Re-Testing Discrepancies",
+        "description": "Point-of-care baseline lipid panels demonstrated a 9.2% positive bias compared to frozen central core lab ultracentrifugation values.",
+        "recommendation": "Calibrate point-of-care enzymatic assays and mandate inclusion decisions solely upon central core laboratory lipid verification."
+      }
+    ],
+    "regulatory": {
+      "protocolVersion": "v2.0",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-161044",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "April 11, 2026",
+      "preparedBy": "DR RACHEL WEISS",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2025-08-01",
+    "lastUpdated": "2026-04-11",
+    "description": "Phase III double-blind randomized clinical trial evaluating oral small-molecule PCSK9 degrader in statin-intolerant patients with established atherosclerotic disease.",
+    "primaryEndpoint": "Percentage reduction in serum LDL-C from baseline to week 24"
+  },
+  {
+    "id": "NEURO-401",
+    "title": "Tau Protein Aggregation Inhibitor in Early Stage Alzheimer's",
+    "protocolNumber": "NEURO-401",
+    "sponsor": "Neurological Disorders Research Foundation",
+    "phase": "Phase II",
+    "status": "Active",
+    "riskLevel": "Critical",
+    "principalInvestigator": "Dr. Helena Zhang",
+    "researchManager": "DR ALISTAIR FINCH",
+    "therapeuticArea": "Neurology",
+    "enrollment": {
+      "current": 95,
+      "target": 200
+    },
+    "timeline": {
+      "startDate": "2025-03-01",
+      "endDate": "2027-03-31",
+      "elapsedPercent": 48,
+      "timeRemaining": "11 months remaining",
+      "daysRemaining": 345,
+      "patientsBehindTarget": 55
+    },
+    "metrics": {
+      "sitesCount": 4,
+      "activeSites": 3,
+      "sitesAtRisk": 2,
+      "sitesNeedAttention": 1,
+      "dropRate": 21,
+      "complianceScore": 3.4,
+      "openIssuesCount": 3
+    },
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 8,
+        "target": 15
+      },
+      {
+        "month": "Feb",
+        "actual": 18,
+        "target": 30
+      },
+      {
+        "month": "Mar",
+        "actual": 29,
+        "target": 45
+      },
+      {
+        "month": "Apr",
+        "actual": 40,
+        "target": 60
+      },
+      {
+        "month": "May",
+        "actual": 52,
+        "target": 75
+      },
+      {
+        "month": "Jun",
+        "actual": 63,
+        "target": 90
+      },
+      {
+        "month": "Jul",
+        "actual": 72,
+        "target": 110
+      },
+      {
+        "month": "Aug",
+        "actual": 80,
+        "target": 130
+      },
+      {
+        "month": "Sept",
+        "actual": 85,
+        "target": 150
+      },
+      {
+        "month": "Oct",
+        "actual": 90,
+        "target": 170
+      },
+      {
+        "month": "Nov",
+        "actual": 93,
+        "target": 185
+      },
+      {
+        "month": "Dec",
+        "actual": 95,
+        "target": 200
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-neuro-1",
+        "name": "BAY AREA MEMORY & AGING CLINIC",
+        "status": "Ongoing",
+        "enrolled": 42,
+        "target": 70,
+        "dropOffRate": 18,
+        "compliance": "Medium",
+        "riskLevel": "High"
+      },
+      {
+        "id": "site-neuro-2",
+        "name": "MANHATTAN COGNITIVE NEUROLOGY",
+        "status": "Ongoing",
+        "enrolled": 32,
+        "target": 65,
+        "dropOffRate": 24,
+        "compliance": "Low",
+        "riskLevel": "Critical"
+      },
+      {
+        "id": "site-neuro-3",
+        "name": "OXFORD NEUROSCIENCE INSTITUTE",
+        "status": "Ongoing",
+        "enrolled": 18,
+        "target": 45,
+        "dropOffRate": 15,
+        "compliance": "High",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-neuro-4",
+        "name": "ZURICH NEURODEGENERATION HUB",
+        "status": "Planned",
+        "enrolled": 3,
+        "target": 20,
+        "dropOffRate": 0,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "neuro-kf-1",
+        "severity": "Critical",
+        "title": "Elevated Subject Drop-Off Due to Lumbar Puncture Burden",
+        "description": "Subject withdrawal rate reached 24% at Manhattan site primarily driven by patient refusal of mandatory 6-month serial cerebrospinal fluid biomarker taps.",
+        "recommendation": "Submit urgent protocol amendment incorporating validated plasma phosphorylated-tau (pTau-217) blood assays as surrogate for serial CSF collections."
+      },
+      {
+        "id": "neuro-kf-2",
+        "severity": "High",
+        "title": "Amyloid-Related Imaging Abnormalities (ARIA-E) Monitoring Lag",
+        "description": "Baseline to week 12 safety volumetric MRI scans were delayed beyond 14-day protocol tolerance for 6 enrolled subjects.",
+        "recommendation": "Contract dedicated neuroradiology imaging core vendor to guarantee 48-hour turn-around for ARIA volumetric safety clearance."
+      }
+    ],
+    "regulatory": {
+      "protocolVersion": "v2.2",
+      "irbStatus": "Approved",
+      "fdaIndNumber": "IND-154988",
+      "reportingPeriod": "Jan 2026 - Mar 2026",
+      "reportDate": "April 09, 2026",
+      "preparedBy": "DR ALISTAIR FINCH",
+      "reportingPeriodEnd": "Mar 31, 2026"
+    },
+    "startDate": "2025-03-01",
+    "lastUpdated": "2026-04-09",
+    "description": "Multinational randomized placebo-controlled Phase II study testing brain-penetrant small molecule targeting pathogenic tau propagation in prodromal Alzheimer's.",
+    "primaryEndpoint": "Change from baseline in Clinical Dementia Rating-Sum of Boxes (CDR-SB) score at 76 weeks"
+  },
+  {
     "id": "MEASLES-2024",
     "title": "Pediatric Measles Booster Safety & Immunogenicity",
     "protocolNumber": "MEASLES-2024",
@@ -311,31 +1030,131 @@
     "researchManager": "DR A. JAMES",
     "therapeuticArea": "Infectious Disease",
     "enrollment": {
-      "current": 20,
+      "current": 78,
       "target": 100
     },
     "timeline": {
       "startDate": "2026-02-01",
       "endDate": "2027-01-31",
-      "elapsedPercent": 18,
+      "elapsedPercent": 28,
       "timeRemaining": "9 months remaining",
       "daysRemaining": 275,
-      "patientsBehindTarget": 15
+      "patientsBehindTarget": 8
     },
     "metrics": {
-      "sitesCount": 9,
-      "activeSites": 5,
-      "sitesAtRisk": 2,
+      "sitesCount": 3,
+      "activeSites": 3,
+      "sitesAtRisk": 1,
       "sitesNeedAttention": 1,
-      "dropRate": 10,
-      "complianceScore": 3.8,
+      "dropRate": 6,
+      "complianceScore": 4.4,
       "openIssuesCount": 1
     },
-    "monthlyTrend": [],
-    "sites": [],
-    "keyFindings": [],
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 10,
+        "target": 12
+      },
+      {
+        "month": "Feb",
+        "actual": 24,
+        "target": 25
+      },
+      {
+        "month": "Mar",
+        "actual": 42,
+        "target": 40
+      },
+      {
+        "month": "Apr",
+        "actual": 58,
+        "target": 55
+      },
+      {
+        "month": "May",
+        "actual": 70,
+        "target": 70
+      },
+      {
+        "month": "Jun",
+        "actual": 78,
+        "target": 85
+      },
+      {
+        "month": "Jul",
+        "actual": 78,
+        "target": 90
+      },
+      {
+        "month": "Aug",
+        "actual": 78,
+        "target": 95
+      },
+      {
+        "month": "Sept",
+        "actual": 78,
+        "target": 100
+      },
+      {
+        "month": "Oct",
+        "actual": 78,
+        "target": 100
+      },
+      {
+        "month": "Nov",
+        "actual": 78,
+        "target": 100
+      },
+      {
+        "month": "Dec",
+        "actual": 78,
+        "target": 100
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-mea-1",
+        "name": "NORTHERN DISTRICT PEDIATRIC CLINIC",
+        "status": "Ongoing",
+        "enrolled": 38,
+        "target": 45,
+        "dropOffRate": 4,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-mea-2",
+        "name": "EASTERN REGIONAL HEALTH CENTER",
+        "status": "Ongoing",
+        "enrolled": 26,
+        "target": 35,
+        "dropOffRate": 8,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      },
+      {
+        "id": "site-mea-3",
+        "name": "CAPITAL CHILDREN'S HOSPITAL",
+        "status": "Ongoing",
+        "enrolled": 14,
+        "target": 20,
+        "dropOffRate": 5,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "mea-kf-1",
+        "severity": "Medium",
+        "title": "Parental Informed Consent Re-Authorization Compliance",
+        "description": "Four minor protocol deviations documented regarding date timestamps on parental assent forms during annual protocol amendment cycle.",
+        "recommendation": "Provide electronic consent signature tablets to trial nurses to guarantee cryptographic timestamp validation."
+      }
+    ],
     "regulatory": {
-      "protocolVersion": "v1.0",
+      "protocolVersion": "v1.1",
       "irbStatus": "Approved",
       "fdaIndNumber": "IND-150211",
       "reportingPeriod": "Feb 2026 - Apr 2026",
@@ -360,29 +1179,129 @@
     "researchManager": "DR B. SMITH",
     "therapeuticArea": "Immunology",
     "enrollment": {
-      "current": 15,
+      "current": 45,
       "target": 100
     },
     "timeline": {
       "startDate": "2026-01-10",
       "endDate": "2026-10-31",
-      "elapsedPercent": 30,
+      "elapsedPercent": 35,
       "timeRemaining": "6 months remaining",
       "daysRemaining": 180,
-      "patientsBehindTarget": 25
+      "patientsBehindTarget": 18
     },
     "metrics": {
-      "sitesCount": 7,
-      "activeSites": 4,
-      "sitesAtRisk": 2,
+      "sitesCount": 3,
+      "activeSites": 3,
+      "sitesAtRisk": 1,
       "sitesNeedAttention": 1,
-      "dropRate": 15,
-      "complianceScore": 3.2,
-      "openIssuesCount": 2
+      "dropRate": 11,
+      "complianceScore": 3.7,
+      "openIssuesCount": 1
     },
-    "monthlyTrend": [],
-    "sites": [],
-    "keyFindings": [],
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 8,
+        "target": 12
+      },
+      {
+        "month": "Feb",
+        "actual": 18,
+        "target": 25
+      },
+      {
+        "month": "Mar",
+        "actual": 30,
+        "target": 40
+      },
+      {
+        "month": "Apr",
+        "actual": 45,
+        "target": 55
+      },
+      {
+        "month": "May",
+        "actual": 45,
+        "target": 70
+      },
+      {
+        "month": "Jun",
+        "actual": 45,
+        "target": 80
+      },
+      {
+        "month": "Jul",
+        "actual": 45,
+        "target": 90
+      },
+      {
+        "month": "Aug",
+        "actual": 45,
+        "target": 95
+      },
+      {
+        "month": "Sept",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Oct",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Nov",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Dec",
+        "actual": 45,
+        "target": 100
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-vz-1",
+        "name": "MIDWEST IMMUNOLOGY CLINIC",
+        "status": "Ongoing",
+        "enrolled": 25,
+        "target": 45,
+        "dropOffRate": 12,
+        "compliance": "Medium",
+        "riskLevel": "High"
+      },
+      {
+        "id": "site-vz-2",
+        "name": "SOUTHERN RESEARCH CONSORTIUM",
+        "status": "Ongoing",
+        "enrolled": 15,
+        "target": 35,
+        "dropOffRate": 8,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-vz-3",
+        "name": "LAKESIDE SPECIALIST HOSPITAL",
+        "status": "Ongoing",
+        "enrolled": 5,
+        "target": 20,
+        "dropOffRate": 10,
+        "compliance": "Medium",
+        "riskLevel": "Medium"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "vz-kf-1",
+        "severity": "High",
+        "title": "Subject Retention Drop in Follow-Up Serology Phase",
+        "description": "12% attrition recorded at Midwest site during month 3 blood serum collection window.",
+        "recommendation": "Provide flexible home mobile nursing phlebotomy options for immunocompromised participants."
+      }
+    ],
     "regulatory": {
       "protocolVersion": "v1.2",
       "irbStatus": "Approved",
@@ -403,13 +1322,13 @@
     "protocolNumber": "INFLUENZA-2024",
     "sponsor": "National Institute of Allergy",
     "phase": "Phase I",
-    "status": "Active",
+    "status": "Recruiting",
     "riskLevel": "Low",
     "principalInvestigator": "Dr. James O'Connor",
     "researchManager": "DR C. BROWN",
     "therapeuticArea": "Infectious Disease",
     "enrollment": {
-      "current": 25,
+      "current": 40,
       "target": 100
     },
     "timeline": {
@@ -421,17 +1340,117 @@
       "patientsBehindTarget": 0
     },
     "metrics": {
-      "sitesCount": 12,
-      "activeSites": 10,
+      "sitesCount": 3,
+      "activeSites": 3,
       "sitesAtRisk": 0,
       "sitesNeedAttention": 0,
       "dropRate": 2,
       "complianceScore": 4.9,
       "openIssuesCount": 0
     },
-    "monthlyTrend": [],
-    "sites": [],
-    "keyFindings": [],
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 5,
+        "target": 10
+      },
+      {
+        "month": "Feb",
+        "actual": 15,
+        "target": 25
+      },
+      {
+        "month": "Mar",
+        "actual": 28,
+        "target": 40
+      },
+      {
+        "month": "Apr",
+        "actual": 40,
+        "target": 55
+      },
+      {
+        "month": "May",
+        "actual": 40,
+        "target": 70
+      },
+      {
+        "month": "Jun",
+        "actual": 40,
+        "target": 85
+      },
+      {
+        "month": "Jul",
+        "actual": 40,
+        "target": 95
+      },
+      {
+        "month": "Aug",
+        "actual": 40,
+        "target": 100
+      },
+      {
+        "month": "Sept",
+        "actual": 40,
+        "target": 100
+      },
+      {
+        "month": "Oct",
+        "actual": 40,
+        "target": 100
+      },
+      {
+        "month": "Nov",
+        "actual": 40,
+        "target": 100
+      },
+      {
+        "month": "Dec",
+        "actual": 40,
+        "target": 100
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-flu-1",
+        "name": "BOSTON CLINICAL RESEARCH LABS",
+        "status": "Ongoing",
+        "enrolled": 22,
+        "target": 40,
+        "dropOffRate": 2,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-flu-2",
+        "name": "DURHAM HEALTH TRIALS UNIT",
+        "status": "Ongoing",
+        "enrolled": 12,
+        "target": 35,
+        "dropOffRate": 1,
+        "compliance": "High",
+        "riskLevel": "Low"
+      },
+      {
+        "id": "site-flu-3",
+        "name": "SEATTLE IMMUNOTHERAPY CLINIC",
+        "status": "Ongoing",
+        "enrolled": 6,
+        "target": 25,
+        "dropOffRate": 3,
+        "compliance": "High",
+        "riskLevel": "Low"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "flu-kf-1",
+        "severity": "Medium",
+        "title": "Clean Phase I Dose Escalation Tolerability Profile",
+        "description": "Zero dose-limiting toxicities observed across cohort 1 (5mcg) and cohort 2 (15mcg) sentinel subjects.",
+        "recommendation": "Safety Monitoring Board authorized initiation of high-dose cohort 3 (30mcg) enrollment."
+      }
+    ],
     "regulatory": {
       "protocolVersion": "v1.0",
       "irbStatus": "Approved",
@@ -452,13 +1471,13 @@
     "protocolNumber": "MUMPS-2024",
     "sponsor": "Public Health Foundation",
     "phase": "Phase IV",
-    "status": "Inactive",
-    "riskLevel": "Medium",
+    "status": "Suspended",
+    "riskLevel": "Critical",
     "principalInvestigator": "Dr. Laura Patel",
     "researchManager": "DR D. JOHNSON",
     "therapeuticArea": "Infectious Disease",
     "enrollment": {
-      "current": 5,
+      "current": 45,
       "target": 100
     },
     "timeline": {
@@ -467,23 +1486,123 @@
       "elapsedPercent": 90,
       "timeRemaining": "1 month remaining",
       "daysRemaining": 30,
-      "patientsBehindTarget": 60
+      "patientsBehindTarget": 40
     },
     "metrics": {
-      "sitesCount": 8,
-      "activeSites": 2,
-      "sitesAtRisk": 3,
+      "sitesCount": 3,
+      "activeSites": 1,
+      "sitesAtRisk": 2,
       "sitesNeedAttention": 2,
       "dropRate": 25,
-      "complianceScore": 2.9,
+      "complianceScore": 2.8,
       "openIssuesCount": 3
     },
-    "monthlyTrend": [],
-    "sites": [],
-    "keyFindings": [],
+    "monthlyTrend": [
+      {
+        "month": "Jan",
+        "actual": 10,
+        "target": 20
+      },
+      {
+        "month": "Feb",
+        "actual": 20,
+        "target": 40
+      },
+      {
+        "month": "Mar",
+        "actual": 30,
+        "target": 60
+      },
+      {
+        "month": "Apr",
+        "actual": 40,
+        "target": 75
+      },
+      {
+        "month": "May",
+        "actual": 45,
+        "target": 90
+      },
+      {
+        "month": "Jun",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Jul",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Aug",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Sept",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Oct",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Nov",
+        "actual": 45,
+        "target": 100
+      },
+      {
+        "month": "Dec",
+        "actual": 45,
+        "target": 100
+      }
+    ],
+    "sites": [
+      {
+        "id": "site-mump-1",
+        "name": "CAMPUS HEALTH CLINIC A",
+        "status": "Ongoing",
+        "enrolled": 25,
+        "target": 40,
+        "dropOffRate": 22,
+        "compliance": "Low",
+        "riskLevel": "Critical"
+      },
+      {
+        "id": "site-mump-2",
+        "name": "UNIVERSITY INFIRMARY B",
+        "status": "Pending",
+        "enrolled": 15,
+        "target": 35,
+        "dropOffRate": 28,
+        "compliance": "Low",
+        "riskLevel": "Critical"
+      },
+      {
+        "id": "site-mump-3",
+        "name": "REGIONAL OUTPATIENT UNIT C",
+        "status": "Completed",
+        "enrolled": 5,
+        "target": 25,
+        "dropOffRate": 20,
+        "compliance": "Medium",
+        "riskLevel": "High"
+      }
+    ],
+    "keyFindings": [
+      {
+        "id": "mump-kf-1",
+        "severity": "Critical",
+        "title": "Severe Subject Loss to Follow-Up Exceeding 25%",
+        "description": "Student population graduation and relocations resulted in a 25% protocol dropout before month 12 plaque reduction neutralization serology collection.",
+        "recommendation": "Halt new enrollment, transition active subjects to remote telemetry check-ins, and initiate data reconciliation audit."
+      }
+    ],
     "regulatory": {
       "protocolVersion": "v2.0",
-      "irbStatus": "Approved",
+      "irbStatus": "Under Review",
       "fdaIndNumber": "IND-141992",
       "reportingPeriod": "Jan 2026 - Mar 2026",
       "reportDate": "March 30, 2026",
@@ -494,54 +1613,5 @@
     "lastUpdated": "2026-03-30",
     "description": "Post-market surveillance study of mumps antibody persistence in university student populations receiving a third MMR dose.",
     "primaryEndpoint": "Plaque reduction neutralization test (PRNT) antibody titers at month 12"
-  },
-  {
-    "id": "RUBELLA-2024",
-    "title": "Congenital Rubella Syndrome Maternal Protection Trial",
-    "protocolNumber": "RUBELLA-2024",
-    "sponsor": "Maternal & Child Health Trust",
-    "phase": "Phase III",
-    "status": "Active",
-    "riskLevel": "Medium",
-    "principalInvestigator": "Dr. David Kim",
-    "researchManager": "DR E. WILLIAMS",
-    "therapeuticArea": "Infectious Disease",
-    "enrollment": {
-      "current": 18,
-      "target": 100
-    },
-    "timeline": {
-      "startDate": "2025-09-15",
-      "endDate": "2026-12-31",
-      "elapsedPercent": 45,
-      "timeRemaining": "8 months remaining",
-      "daysRemaining": 250,
-      "patientsBehindTarget": 20
-    },
-    "metrics": {
-      "sitesCount": 11,
-      "activeSites": 8,
-      "sitesAtRisk": 2,
-      "sitesNeedAttention": 1,
-      "dropRate": 11,
-      "complianceScore": 3.7,
-      "openIssuesCount": 1
-    },
-    "monthlyTrend": [],
-    "sites": [],
-    "keyFindings": [],
-    "regulatory": {
-      "protocolVersion": "v1.1",
-      "irbStatus": "Approved",
-      "fdaIndNumber": "IND-147332",
-      "reportingPeriod": "Jan 2026 - Mar 2026",
-      "reportDate": "April 08, 2026",
-      "preparedBy": "DR E. WILLIAMS",
-      "reportingPeriodEnd": "Mar 31, 2026"
-    },
-    "startDate": "2025-09-15",
-    "lastUpdated": "2026-04-08",
-    "description": "Multi-center evaluation of rubella seroprotection in reproductive-age females following accelerated vaccination scheduling.",
-    "primaryEndpoint": "Rubella IgG seropositivity rate at 6 months post-vaccination"
   }
 ]

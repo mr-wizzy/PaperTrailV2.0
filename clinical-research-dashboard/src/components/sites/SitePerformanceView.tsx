@@ -1,9 +1,10 @@
 import type { FC } from 'react';
-import { Users, Building2, TrendingDown, ShieldAlert, FileText, ArrowLeft } from 'lucide-react';
+import { Users, Building2, TrendingDown, ShieldAlert, FileText, ArrowLeft, Download } from 'lucide-react';
 import type { ClinicalProject } from '../../types/project';
 import { Breadcrumbs } from '../common/Breadcrumbs';
 import { SitePerformanceTable } from './SitePerformanceTable';
 import { EmptyState } from '../common/EmptyState';
+import { exportToCsv } from '../../utils/csvExport';
 
 export interface SitePerformanceViewProps {
   project: ClinicalProject | null | undefined;
@@ -39,6 +40,37 @@ export const SitePerformanceView: FC<SitePerformanceViewProps> = ({
   const dropRate = project.metrics?.dropRate || 17;
   const complianceScore = project.metrics?.complianceScore || 3;
 
+  const handleExportSitesCsv = () => {
+    const headers = [
+      'Site ID',
+      'Site Name',
+      'Status',
+      'Enrolled Patients',
+      'Target Patients',
+      'Enrollment Rate (%)',
+      'Drop-Off Rate (%)',
+      'Compliance Rating',
+      'Risk Level',
+    ];
+
+    const rows = sites.map((s) => {
+      const rate = s.target > 0 ? Math.round((s.enrolled / s.target) * 100) : 0;
+      return [
+        s.id,
+        s.name,
+        s.status,
+        s.enrolled,
+        s.target,
+        rate,
+        s.dropOffRate,
+        s.compliance,
+        s.riskLevel,
+      ];
+    });
+
+    exportToCsv(`${project.id}_Sites_Performance`, headers, rows);
+  };
+
   return (
     <div className="space-y-6">
       {/* Breadcrumbs */}
@@ -64,6 +96,16 @@ export const SitePerformanceView: FC<SitePerformanceViewProps> = ({
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 shrink-0">
+          <button
+            type="button"
+            onClick={handleExportSitesCsv}
+            className="min-h-[44px] inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-700 text-xs sm:text-sm font-semibold rounded-xl border border-gray-300 shadow-xs transition-colors cursor-pointer"
+            aria-label="Export site performance data to CSV"
+          >
+            <Download className="w-4 h-4 text-gray-500" />
+            <span>Export CSV</span>
+          </button>
+
           <button
             type="button"
             onClick={() => onNavigateToStudyOverview(project.id)}
